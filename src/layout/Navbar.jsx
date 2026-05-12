@@ -1,6 +1,6 @@
 import { Button } from "@/components/Button"
 import { Menu, X } from "lucide-react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const navLinks = [
   {href: "#about", label: "About"},
@@ -12,12 +12,27 @@ const navLinks = [
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handScroll = () => {
+      setIsScrolled(window.scrollY > 50)
+    }
+
+    window.addEventListener("scroll", handScroll)
+
+    return () => window.removeEventListener("scroll", handScroll)
+  }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-transparent py-5">
+    <header
+          className={`fixed top-0 left-0 right-0 transition-all duration-500 ${
+            isScrolled ? "glass-strong py-3" : "bg-transparent py-5"
+          }  z-50`}
+    >      
       <nav className="container mx-auto px-6 flex items-center justify-between">
         <a href="#" className="text-xl font-bold tracking-tight hover:text-primary">
-          RS<span className="text-primary">.</span>
+          RenanSouz<span className="text-primary">.dev</span>
         </a>
 
         <div className="hidden md:flex items-center gap-1">
@@ -42,13 +57,21 @@ export const Navbar = () => {
 
       {isMobileMenuOpen && (
         <div className="md:hidden glass-strong animate-fade-in">
-          <div className="container mx-auto px-6 py-6 flex-col gap-4">
+          <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {navLinks.map((link, index) => (
-              <a href={link.href } key={index} className="text-lg text-muted-foreground hover:text-foreground py-2">
+              <a
+                href={link.href}
+                key={index}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-lg text-muted-foreground hover:text-foreground py-2"
+              >
                 {link.label}
               </a>
             ))}
-            <Button>Contact Me</Button>
+
+            <Button onClick={() => setIsMobileMenuOpen(false)}>
+              Contact Me
+            </Button>
           </div>
         </div>
       )}
