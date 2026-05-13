@@ -5,24 +5,24 @@ const highlights = [
     icon: Code2,
     title: "Full Stack",
     description:
-      "I can build the whole thing, from the hidden logic and databases to the interface people actually touch.",
+      "Frontend, APIs, and databases working as one system.",
   },
   {
     icon: Brain,
     title: "AI & Data",
     description:
-      "Moving beyond just 'building apps' to understanding how they think and process the world around them.",
+      "Building data-driven applications through predictive analysis, modeling, and machine learning workflows.",
   },
   {
     icon: Globe,
     title: "Global View",
-    description: "From Brazil to Vancouver, I've built tech for real people in different languages and cultures.",
+    description: "Experience across Brazil and Canada shaped a practical approach to different users and workflows.",
   },
   {
     icon: ShieldCheck,
     title: "Real World",
     description:
-      "Experience in insurance systems and tech support means I build things that actually work.",
+      "Internal systems and support work reinforced the value of clarity, reliability, and consistency.",
   },
 ];
 
@@ -40,38 +40,36 @@ export const About = () => {
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
-              Understanding the logic, <br />
+              A quick <br />
               <span className="font-serif italic font-normal text-white">
                 {" "}
-                before writing the code.
+                introduction
               </span>
             </h2>
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I started out taking apart laptops and helping people fix their 
-                tech, which eventually led me across the ocean to Vancouver. 
-                I've spent the last few years jumping between the heavy-duty 
-                logic of insurance systems and the fast-paced world of web apps.
+                Started in tech support, where fixing hardware and tracing issues
+                 taught how systems break and how to read them properly. That 
+                 same mindset still drives the work: understand the flow first, 
+                 then write the code. 
               </p>
               <p>
-                I don't just want to build things that work. I want to understand 
-                why they work. That's what took me from standard development to 
-                studying Artificial Intelligence. I'm currently obsessing over 
-                how data can tell stories and make our applications actually smart.
+                Most of the work sits between frontend, backend, and data. 
+                Clean structure, predictable behavior, and readable code matter 
+                more than noise or decoration.
               </p>
               <p>
-                When I'm not in a code editor, I'm usually geeking out over the 
-                latest hardware drops, reading up on tech news, or hanging out 
-                in developer communities to see how the software world is evolving. 
+                Beyond development, I spend a lot of time exploring how systems 
+                behave through data, performance, and real-world usage. From 
+                predictive analysis projects to studying software architecture, 
+                curiosity has always been part of the way I learn and build.
               </p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "Knowledge is a horizon that keeps moving. The discipline to keep 
-                walking is what separates those who use tools from those who truly 
-                understand them."
+                "The deeper the understanding becomes, the clearer it is that there will always be more left to discover."
               </p>
             </div>
           </div>
