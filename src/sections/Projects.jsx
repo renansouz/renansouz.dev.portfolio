@@ -8,7 +8,7 @@ const projects = [
     title: "Finance App",
     description:
       "A system that organizes my finances, tracks bills, credit cards, investments, assets, and financial indicators.",
-    image: "/projects/project2.png",
+    image: "/projects/project1.jpeg",
     tags: ["Nextjs", "Typescript", "TailwindCSS", "PostgreSQL", "Prisma", "Recharts"],
     link: "#",
     github: "https://github.com/renansouz/finance-app",
