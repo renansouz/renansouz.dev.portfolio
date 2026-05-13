@@ -47,7 +47,7 @@ export const Hero = () => {
             key={i}
             className="absolute w-1.5 h-1.5 rounded-full opacity-60"
             style={{
-              backgroundColor: "#7c3aed",
+              backgroundColor: "var(--color-primary)",
               left: particle.left,
               top: particle.top,
               animation: `slow-drift ${particle.duration}s ease-in-out infinite`,

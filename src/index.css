@@ -1,26 +1,26 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #0b1120;
+  --color-background: #040816;
   --color-foreground: #f8fafc;
 
-  --color-card: #111827;
+  --color-card: #0a1020;
 
-  --color-primary: #7c3aed;
+  --color-primary: #4f8cff;
   --color-primary-foreground: #ffffff;
 
-  --color-secondary: #1e293b;
-  --color-secondary-foreground: #c4b5fd;
-  
-  --color-muted: #334155;
+  --color-secondary: #10203d;
+  --color-secondary-foreground: #c7ddff;
+
+  --color-muted: #1a2740;
   --color-muted-foreground: #94a3b8;
 
-  --color-border: #243041;
+  --color-border: #203760;
 
   --radius: 0.80rem;
 
-  --color-highlight: #22d3ee;
-  --color-surface: #1e293b;
+  --color-highlight: #60bfff;
+  --color-surface: #0c1427;
 }
 
 @layer base {
@@ -171,9 +171,9 @@
   }
 
   .animated-border:hover {
-    background-color: color-mix(in srgb, #26c4b8 15%, transparent);
+    background-color: color-mix(in srgb, var(--color-primary) 15%, transparent);
     backdrop-filter: blur(16px);
-    box-shadow: 0 0 20px color-mix(in srgb, #26c4b8 20%, transparent);
+    box-shadow: 0 0 20px color-mix(in srgb, var(--color-primary) 20%, transparent);
   }
 
   .timeline-glow {
