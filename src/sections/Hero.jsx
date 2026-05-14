@@ -64,25 +64,21 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">  
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                  Software Developer · React Enthusiast
+                  Full-Stack · React · TypeScript
                 </span>
             </div>
 
             <div className="space-y-4 ">
              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-[-0.03em]">
-                Building
-                <span className="text-primary glow-text"> modern</span>
-                <br />
-                systems with
-                <br />
-                <span className="font-serif italic font-normal text-white">
-                  logic and structure.
-                </span>
+                 Renan Souza
+                 <br />
+                <span className="text-primary glow-text">Software Developer</span>
+              
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-               Hi, I'm Renan Souza. I enjoy building applications from the ground up,
-                understanding how systems behave at scale, and exploring the data and
-                logic that drive smarter software.
+                Started in tech support, where tracing problems to the root became the habit.
+                That same habit now goes into interfaces, APIs, and data work.
+                The goal is software that reads clearly, behaves predictably, and solves the right problem.
               </p>
             </div>
 
