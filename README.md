@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
 </p>
 
-![Project Preview](https://img.sanishtech.com/u/ab28f57dcaa0340e344566998702efb5.png)
+![Project Preview](https://i.imgur.com/5kghMLv.jpeg)
 
 ## Introduction
 
