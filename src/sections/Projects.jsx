@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
-    title: "Finance App",
+    title: "BROC. - Finance App",
     description:
       "A system that organizes my finances, tracks bills, credit cards, investments, assets, and financial indicators.",
     image: "/projects/project1.png",
